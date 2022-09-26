@@ -14,6 +14,9 @@ body {
 }
 
 .text {
+    padding: 7px;
+    border: 0px;
+    border-radius: 10px;
     text-align: center;
     color: #212226ff;
 }
@@ -27,7 +30,7 @@ body {
     box-shadow: 3px 2px #796355ff;
 }
 
-.portrait:hover {
+.portrait:hover+.text {
     -moz-box-shadow: 1px 1px 5px rgb(184, 98, 17);
     -webkit-box-shadow: 1px 1px 5px rgb(184, 98, 17);
     box-shadow: 1px 1px 5px rgb(184, 98, 17);

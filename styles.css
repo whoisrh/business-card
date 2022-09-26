@@ -1,0 +1,53 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    display: flex;
+    width: 430px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(212, 187, 166);
+    border-bottom: 7px solid #a99f3cff;
+}
+
+.text {
+    text-align: center;
+    color: #212226ff;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -moz-box-shadow: 3px 2px #796355ff;
+    -webkit-box-shadow: 3px 2px #796355ff;
+    box-shadow: 3px 2px #796355ff;
+}
+
+.portrait:hover {
+    -moz-box-shadow: 1px 1px 5px rgb(184, 98, 17);
+    -webkit-box-shadow: 1px 1px 5px rgb(184, 98, 17);
+    box-shadow: 1px 1px 5px rgb(184, 98, 17);
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -webkit-transform: translateX(16px);
+        transform: translateX(16px);
+    }
+    80% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+}
